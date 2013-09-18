@@ -11,7 +11,7 @@ $User = new \model\User();
 
 if ($_POST["user"] == $User->getUserName() && $_POST["password"] == $User->getPassword())
 {
-    $_SESSION['message'] = 'Välkommen, du är inloggad:)';
+    $_SESSION['message'] = 'Grattis inloggningen lyckades:)';
     $_SESSION['User'] = 'True';
     header("Location: admin.php");
     exit;
